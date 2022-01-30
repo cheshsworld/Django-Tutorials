@@ -1,6 +1,6 @@
 import datetime
 
-from tkinter.messagebox import QUESTION
+# from tkinter.messagebox import QUESTION
 from django.db import models
 from django.utils import timezone
 
@@ -9,7 +9,7 @@ from django.utils import timezone
 # two tables rows and fields 
 
 class Question(models.Model):
-    question_text =models.CharField(max_length=200)
+    question_text = models.CharField(max_length=200)
     # string date published added to make it readable
     pub_date = models.DateTimeField('date published')
     def __str__(self):
